@@ -8,7 +8,10 @@
         <link rel="stylesheet" type="text/css" href="main.css">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    </head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+      </head>
     <body>
       <header>
   
@@ -34,40 +37,75 @@
       </header>
 <section>
   <div class="container">
-    <div class="gallery">
+    <div class="row">
+      <div class="col-4">
+          <a href="images/1.jpg" class="image">
+            <img src="images/1.jpg" alt ="">
+          </a>
+          <a href="images/2.jpg" class="image">
+            <img src="images/2.jpg" alt ="">
+          </a>
+          <a href="images/3.jpg" class="image">
+            <img src="images/3.jpg" alt ="">
+          </a>
+          <a href="images/4.jpg" class="image">
+            <img src="images/4.jpg" alt ="">
+          </a>
+          <a href="images/5.jpg" class="image">
+            <img src="images/5.jpg" alt ="">
+          </a>
+      </div>
 
-      <a href="images/2.jpg" class="image">
-        <img src="https://via.placeholder.com/250" alt ="">
-      </a>
+      <div class="col-4">
 
-      <a href="" class="image">
-        <img src="https://via.placeholder.com/250" alt ="">
-      </a>
+          <a href="images/6.jpg" class="image">
+            <img src="images/6.jpg" alt ="">
+          </a>
+          <a href="images/7.jpg" class="image">
+            <img src="images/7.jpg" alt ="">
+          </a>
+          <a href="images/8.jpg" class="image">
+            <img src="images/8.jpg" alt ="">
+          </a>
+          <a href="images/9.jpg" class="image">
+            <img src="images/9.jpg" alt ="">
+          </a>
+          <a href="images/10.jpg" class="image">
+            <img src="images/10.jpg" alt ="">
+          </a>
+      </div>
 
-      <a href="" class="image">
-        <img src="https://via.placeholder.com/250" alt ="">
-      </a>
-
-      <a href="" class="image">
-        <img src="https://via.placeholder.com/250" alt ="">
-      </a>
-
-      <a href="" class="image">
-        <img src="https://via.placeholder.com/250" alt ="">
-      </a>
-      <a href="" class="image">
-        <img src="https://via.placeholder.com/250" alt ="">
-      </a>
-
-      <a href="" class="image">
-        <img src="https://via.placeholder.com/250" alt ="">
-      </a>
-
-      <a href="" class="image">
-        <img src="https://via.placeholder.com/250" alt ="">
-      </a>
+      <div class="col-4">
+          <a href="images/11.jpg" class="image">
+              <img src="images/11.jpg" alt ="">
+            </a>
+            <a href="images/12.jpg" class="image">
+              <img src="images/12.jpg" alt ="">
+            </a>
+            <a href="images/13.jpg" class="image">
+              <img src="images/13.jpg" alt ="">
+            </a>
+            <a href="images/14.jpg" class="image">
+              <img src="images/14.jpg" alt ="">
+            </a>
+            <a href="images/15.jpg" class="image">
+              <img src="images/15.jpg" alt ="">
+            </a>
+      </div>
      </div>
   </div>
+  <script>
+    $(".container").magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      gallery:{
+        enabled: true
+      }
+
+    });
+  
+  
+  </script>
 </section>
 <footer>
 
