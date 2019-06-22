@@ -1,0 +1,135 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: grey;
+    font-family: 'Poppins', sans-serif;
+}
+/* navbar*/
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background: rgba(63, 191, 191);
+}
+
+.nav-elements {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav-elements li {
+    position: relative;
+    list-style: none;
+}
+.nav-elements a {
+    color: white;
+    text-decoration: none;
+    
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+.logo {
+    width: 200px;
+    height: 40px;
+}
+.logo img {
+    width: 100%;
+    height: auto;
+}
+.burger-menu div{
+    width: 20px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+    .nav-elements{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    
+    .nav-elements{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color:  rgba(63, 191, 191);
+        width: 50%;
+        flex-direction: column;
+        justify-content: flex-start;
+        transform: translate(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-elements li{
+        margin-top: 10px;
+        opacity: 0;
+    }
+    .nav-elements a::before{
+        visibility: hidden;
+    }
+    .burger-menu {
+        display: block;}
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navElementsFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+ 
+.nav-elements a:hover,
+.nav-elements a.active {
+    color: aquamarine;
+}
+
+.nav-elements a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+    margin-top: -15px;
+}
+.nav-elements a:hover::before {
+    width: 100%;
+}
+

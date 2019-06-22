@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <title>Bucharest Street Photography</title>
+        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="main.css">
+
+    </head>
+
+    <body>
+        <header>
+  
+            <nav class="nav-container">        
+                <div class="logo"><img src="WC logo/logo_transparent.png"></div>
+                <ul class="nav-elements">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="burger-menu">
+                  <div class="line1"></div>
+                  <div class="line2"></div>
+                  <div class="line3"></div>
+                </div>
+            </nav>
+    
+            <script src="main.js"></script>
+    
+    
+        </header>
+
+        <section>
+            
+        <div class="container">
+
+            <div class="contact-form">
+                <h3>Contact</h3>
+                <p>We'd love to hear from you ! Contact us complete the form below</p>
+                <form>
+                    Name *<br>
+                    <input type="text" name="name"><br>
+                    Subject *<br>
+                    <input type="text" name="subject"><br>
+                    Email Address *<br>
+                    <input type="email" name="email"><br>
+                    Message *<br>
+                    <textarea name="message" rows="10" cols="21">your message...
+                    </textarea> 
+                </form>
+            </div>
+
+            <div class="location">
+                <h3>Location</h3>
+                <h4>Wild Code School, Bucharest</h4>
+                <div id="map"></div>
+            </div>
+
+        </div>       
+             <script>
+                // Initialize and add the map
+                function initMap() {
+                // The location of wcs
+                var wcs = {lat: 44.454891, lng: 26.081533};
+                // The map, centered at wcs
+                var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 15, center: wcs});
+                // The marker, positioned at wcs
+                var marker = new google.maps.Marker({position: wcs, map: map});
+                }
+            </script>
+
+            <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCQT3qxC5DGIYU3esVchXi-XFzaa1vAMM&callback=initMap">
+            </script>
+              
+        
+        </section>
+    </body>
+</html>
