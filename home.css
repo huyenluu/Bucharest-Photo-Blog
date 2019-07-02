@@ -12,11 +12,16 @@
     margin: auto;
     overflow: hidden;
     position: relative;
+    padding-bottom: 5%;
 }
 .carousel-slide{
     display:flex;
     width: 100%;
     height: 500px;
+}
+
+.carousel-slide img {
+  width: 100%;
 }
 
 #prevBtn{
@@ -40,18 +45,74 @@
 }
 
 
-.footer{
-    position: absolute;
-    bottom: 0;
-    background: #303036;
-    color: white;
-    height: 200px;
-    width:100%;
-    
-   
+
+.box-line {
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    background-image: linear-gradient(to left, #fff, #d9d9d9, #fff);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+
+ /* SOCIAL MEDIA */
+.social-media {
+    width: 100%;
+    height: 120px;
+    background-color: #f5f5f5;
+  }
   
-}
+  .social-media .content-social {
+    width: 75%;
+    margin: auto;
+  }
+  
+  .social-media .content-social .about-page h3 {
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  .social-media .content-social .about-page {
+    float: left;
+    margin-left: 20%;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+  }
+  
+  
+  
+  .social-media .content-social .social-media-button {
+    float: right;
+    margin-right: 10%;
+  }
+  
+  .social-media .content-social ul li {
+    display: inline-block;
+  }
+  
+  .social-media .content-social ul li a {
+   font-size: 25px;
+   margin-left: 10px;
+   color: #000; 
+  }
+  
+  .social-media .content-social ul li a:hover {
+   color: #737373; 
+  }
+  /* END SOCIAL MEDIA */
+  
+  /* FOOTER*/
+  .footer {
+  position: absolute;
+  padding-top: 50px;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  }
+  /* END FOOTER */
 
-
-
- 
