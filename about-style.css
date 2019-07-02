@@ -1,0 +1,45 @@
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anton);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200);
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:800);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  opacity: 0.8;
+}
+
+
+body {  
+    font-size: 16px; 
+    background-image: url(images/2_Bucharest.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+  }
+
+  .box-line {
+    width: 100%;
+    background-color:black;
+    background-image: linear-gradient(to left, #fff, #d9d9d9, #fff);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+  .about img {
+    width: 100%;
+    -webkit-filter: grayscale(20%);
+    filter: grayscale(20%);
+}
+
+
+
+
+
