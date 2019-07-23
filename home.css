@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine"');
+
 *{
    
     padding: 0;
@@ -39,19 +41,13 @@
     cursor: pointer;
 }
 
-
-.footer{
-    position: absolute;
-    bottom: 0;
-    background: #303036;
-    color: white;
-    height: 200px;
-    width:100%;
-    
-   
-  
+footer {
+    padding: 50px 0;
+    background: white;
+    font-size:20px;
+    text-align:center;
+    font-family: 'Comfortaa', cursive;
 }
-
 
 
  
