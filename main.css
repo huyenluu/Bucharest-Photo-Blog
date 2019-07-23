@@ -11,7 +11,7 @@ body{
     justify-content: space-between;
     align-items: center;
     min-height: 8vh;
-    background: rgba(63, 191, 191);
+    background: rgba(63, 191, 191,1);
 }
 .nav-elements {
     padding-top: 15px;
@@ -68,8 +68,8 @@ body{
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color:  rgba(63, 191, 191);
-        width: 50%;
+        background-color:  rgba(63, 191, 191,1);
+        width: 100%;
         flex-direction: column;
         justify-content: flex-start;
         transform: translate(100%);

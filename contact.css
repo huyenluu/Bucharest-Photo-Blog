@@ -31,11 +31,15 @@ h1 {
 .inner-address{
     display: inline;
     margin-bottom: 20px;
+    min-height: 70px;
+}
+.phone {
+   margin-bottom: 0px;
 }
 .fas {
     font-size: 25px;
     margin-bottom: 10px;
-    color:  rgb(60, 212, 212);
+    color:  rgb(60, 212, 212,1);
     float: left;
     margin-left: 50px;
 }
@@ -49,19 +53,25 @@ p{
     align-items: center;
     margin-bottom: 50px;
 }
-.input-name {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
+
 .input > input {
     background: none;
     border-radius: 10px;
-    border-color:  rgb(60, 212, 212);
-    width: 260px;
+    border-color:  rgb(60, 212, 212,1);
+    width: 90%;
     padding: 10px 20px;
     outline: none;
+}
+.input-name {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.last-name {
+  display: flex;
+  justify-content: flex-end;
+
 }
 .input-email {
     width: 100%;
@@ -73,7 +83,7 @@ p{
     outline: none;
     background: none;
     border-radius: 10px;
-    border-color:  rgb(60, 212, 212);
+    border-color:  rgb(60, 212, 212,1);
 }
 
 .input-msg{
@@ -87,10 +97,10 @@ p{
     height: 120px;
     background: none;
     border-radius: 10px;
-    border-color:  rgb(60, 212, 212);
+    border-color:  rgb(60, 212, 212,1);
 }
 .sent-btn{
-    background: rgb(143, 235, 235);
+    background: rgb(143, 235, 235,1);
     padding: 10px 20px;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -122,6 +132,10 @@ p{
     cursor: pointer;
     transition: all 0.5s ease;
   }
+  .inner-social a{
+    text-decoration: none;
+    color: black;
+  }
   .fab:hover{
     color:grey;
   }
@@ -138,7 +152,7 @@ p{
   }
 
   hr {
-width: 80%;
-color: black;
-}
+    width: 70%;
+    color: black;
+  }
    
