@@ -29,7 +29,6 @@ h1 {
     text-align: center;
 }
 .inner-address{
-    display: inline;
     margin-bottom: 20px;
     min-height: 70px;
 }
@@ -55,12 +54,7 @@ p{
 }
 
 .input > input {
-    background: none;
-    border-radius: 10px;
-    border-color:  rgb(60, 212, 212,1);
     width: 90%;
-    padding: 10px 20px;
-    outline: none;
 }
 .input-name {
   display: flex;
@@ -79,11 +73,7 @@ p{
 }
 .input-email > input{
     width: 100%;
-    padding: 10px 20px;
-    outline: none;
-    background: none;
-    border-radius: 10px;
-    border-color:  rgb(60, 212, 212,1);
+
 }
 
 .input-msg{
@@ -92,13 +82,27 @@ p{
 }
 .input-msg > textarea{
     width: 100%;
-    padding: 10px 20px;
-    outline: none;
     height: 120px;
-    background: none;
-    border-radius: 10px;
-    border-color:  rgb(60, 212, 212,1);
 }
+input[type=text], textarea {
+  transition: all 0.30s ease-in-out;
+  outline: none;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid  lightgrey;
+  background: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+ 
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgb(81, 227, 238);
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+  background: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
 .sent-btn{
     background: rgb(143, 235, 235,1);
     padding: 10px 20px;
@@ -114,13 +118,32 @@ p{
     /* Chrome/Opera/Safari */
     color: #a9aacd;
   }
-  ::-moz-placeholder {
+::-moz-placeholder {
     /* Firefox 19+ */
     color: #a9aacd;
   }
-  :-ms-input-placeholder {
+:-ms-input-placeholder {
     /* IE 10+ */
     color: #a9aacd;
+  }
+
+  input[type=text]:focus::-webkit-input-placeholder {
+    color:transparent;
+  }
+  input[type=text]:focus::-moz-placeholder {
+    color:transparent;
+  }
+  input[type=text]:focus::-ms-input-placeholder {
+    color:transparent;
+  }
+  textarea:focus::-webkit-input-placeholder {
+    color:transparent;
+  }
+  textarea:focus::-moz-placeholder {
+    color:transparent;
+  }
+  textarea:focus::-ms-input-placeholder {
+    color:transparent;
   }
   .inner-social{
       margin: 20px auto 50px auto;
