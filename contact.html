@@ -7,7 +7,8 @@
         <title>Bucharest Street Photography</title>
         <link rel="stylesheet" href="contact.css">
         <link rel="stylesheet" href="main.css">
-
+        <script src="https://kit.fontawesome.com/fb64bbc2b7.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>       
     </head>
 
     <body>
@@ -34,35 +35,8 @@
     
         </header>
 
-        <section>
-            
-        <div class="container">
-
-            <div class="form-box col-6">
-                <div class="row">
-                     <h3>Contact</h3>
-                </div>
-               
-                <div class="row">
-                    <p>We'd love to hear from you ! </p>
-                    <p>Contact us complete the form below.</p>
-                </div>
-                <div class="row">
-                    <form>
-                        Name *<br>
-                        <input type="text" name="name"><br>
-                        Subject *<br>
-                        <input type="text" name="subject"><br>
-                        Email Address *<br>
-                        <input type="email" name="email"><br>
-                        Message *<br>
-                        <textarea name="message" rows="10" cols="21">your message...
-                        </textarea> 
-                    </form>            
-                </div>
-                
-            </div>
-
+<!-- map section -->
+<!-- 
             <div class="location-box col-6">
                 <div class="row">
                     <h3>Location</h3>
@@ -73,8 +47,7 @@
 
                 <div id="map"></div>
             </div>
-
-        </div>       
+     
              <script>
                 // Initialize and add the map
                 function initMap() {
@@ -90,9 +63,77 @@
 
             <script async defer
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCQT3qxC5DGIYU3esVchXi-XFzaa1vAMM&callback=initMap">
-            </script>
-              
-        
-        </section>
+            </script> -->
+
+
+        <div class="container">
+
+            <div class="contact-header">
+                <h1>contact us</h1>
+                <h3 class="header-message">We <i class="far fa-heart"></i> to hear from you ! </h3>
+            </div>
+
+             <div class="contact-body row">
+                <div class="address col-lg-5">
+                    <div class="inner-address">
+                        <a href="https://www.google.com/maps/place/Mindspace+Victoriei/@44.4546687,26.0793553,17z/data=!3m1!4b1!4m5!3m4!1s0x40b203ea4b9fa9b1:0xae0e982b436ba37d!8m2!3d44.4546687!4d26.081544">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </a>
+                        
+                        <p>Wild code school Bucharest <br/> Bulevardul Ion Mihalache 15-17, Bucharest</p>
+                    </div>
+                    <div class="inner-address">
+                        <a href="mailto:example@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <p>example@gmail.com</p>
+                    </div>
+                    <div class="inner-address phone">
+                        <i class="fas fa-phone"></i>
+                        <p>+4 072000000</p>
+                    </div>
+                    <hr>
+                    <div class="inner-social">
+                        <a href="https://www.facebook.com/"> 
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                       <a href="https://twitter.com/">
+                            <i class="fab fa-twitter"></i>
+                       </a>
+                       <a href="http://linkedin.com">
+                            <i class="fab fa-linkedin-in"></i>
+                       </a>
+                       <a href="https://github.com/">
+                            <i class="fab fa-github"></i>
+                       </a>
+
+                    </div>
+            </div>
+                
+                <div class="form col-lg-6 offset-lg-1">
+                    <div class="input-name">
+                        <div class="input">
+                            <input type="text" placeholder="First Name">
+                        </div>
+                        <div class="input last-name">
+                            <input type="text" placeholder="Last Name">
+                        </div>
+                    </div>
+                    
+                    <div class="input-email">
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="input-msg">
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+                        
+                    <div class="sent-btn">
+                        Send Message
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </body>
 </html>
