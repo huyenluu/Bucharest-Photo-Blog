@@ -4,16 +4,17 @@
 .home-page {
   background-image: url("images/3.jpg");
   background-size: cover;
-  height: 855px;
-  opacity:.90;
+  height: 855px; 
 }
 
 h1 {
+  
   font-family: 'Comfortaa', cursive;
   font-size: 45px;
   padding-top: 150px;
   text-align: center;
   font-weight:bolder;
+ 
 }
 
 .about-page p {
@@ -48,10 +49,12 @@ h1 {
 
 .para {
   text-align: center;
-  /*font-family: 'Old Standard TT', serif;*/
-  font-weight:lighter;
+  color:black;
+  /* font-family: 'Old Standard TT', serif; */
   font-family: 'Comfortaa', cursive;
   font-size: 18px;
+  font-weight: bolder;
+ 
 }
 
 hr {
